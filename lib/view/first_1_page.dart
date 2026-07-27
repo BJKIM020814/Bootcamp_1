@@ -5,6 +5,25 @@ class First1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("First image Page"), centerTitle: true),
+
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(backgroundImage: AssetImage('images/chikorita.png')),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/'),
+              child: Text('Got to Home'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '//'),
+              child: Text('Go to Screen #1'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

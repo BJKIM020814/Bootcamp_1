@@ -27,7 +27,7 @@ class ThirdPage extends StatelessWidget {
                   return Third1Page();
                 },));
               }, 
-              child: Text('Go to the Screen #3'),
+              child: Text('Go to the Image page'),
             ),
           ],
         ),

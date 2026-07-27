@@ -27,7 +27,7 @@ class FourthPage extends StatelessWidget {
                 return Fourth1Page();
               },));
             }, 
-            child: Text('Go to the Screen #4'),
+              child: Text('Go to the Image page'),
             ),
           ],
         ),

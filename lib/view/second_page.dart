@@ -15,7 +15,7 @@ class SecondPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text("Go to the Screen #1"),
+              child: Text("Go to the Home"),
             ),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, "/2-1nd"),
