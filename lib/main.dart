@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:team_project_1/view/first_1_page.dart';
 import 'package:team_project_1/view/first_page.dart';
+import 'package:team_project_1/view/fourth_1_page.dart';
+import 'package:team_project_1/view/fourth_page.dart';
 import 'package:team_project_1/view/second_1_page.dart';
 import 'package:team_project_1/view/second_page.dart';
+import 'package:team_project_1/view/third_1_page.dart';
+import 'package:team_project_1/view/third_page.dart';
 
 import 'view/home.dart';
 
@@ -29,6 +33,10 @@ class MyApp extends StatelessWidget {
         '/2nd': (context) => SecondPage(),
         '/1-1st': (context) => First1Page(),
         '/2-1nd': (context) => Second1Page(),
+        '/3th': (context) => ThirdPage(),
+        '/3-1th': (context) => Third1Page(),
+        '/4th': (context) => FourthPage(),
+        '/4-1th': (context) => Fourth1Page(),
       },
       initialRoute: '/',
     );

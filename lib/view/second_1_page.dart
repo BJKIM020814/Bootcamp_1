@@ -13,6 +13,7 @@ class Second1Page extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundImage: AssetImage(
@@ -21,14 +22,17 @@ class Second1Page extends StatelessWidget {
               radius: 50,
             ),
             ElevatedButton(
-              onPressed: () => Home(), 
-              child: Text('Go to Home'),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Go to the Screen #2'),
             ),
             ElevatedButton(
               onPressed: () {
-                //
+                Navigator.pop(context);
+                Navigator.pop(context);
               }, 
-              child: Text('Go to the Screen #2'),
+              child: Text('Go to Home'),
             ),
           ],
         ),

@@ -19,6 +19,14 @@ class Home extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, "/2nd"),
               child: Text("Go to the Screen #2"),
             ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/3th"),
+              child: Text("Go to the Screen #3"),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/4th"),
+              child: Text("Go to the Screen #4"),
+            ),
           ],
         ),
       ),

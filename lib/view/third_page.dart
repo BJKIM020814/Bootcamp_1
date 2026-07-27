@@ -13,12 +13,13 @@ class ThirdPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
               }, 
-              child: Text('Go to the Screen #3'),
+              child: Text('Go to Home'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -26,7 +27,7 @@ class ThirdPage extends StatelessWidget {
                   return Third1Page();
                 },));
               }, 
-              child: Text('Go to the Screen #3'),
+              child: Text('Go to the Image page'),
             ),
           ],
         ),
