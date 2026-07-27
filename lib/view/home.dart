@@ -5,6 +5,23 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Main Screen"), centerTitle: true),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/1st"),
+              child: Text("Go to the Screen #1"),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/2nd"),
+              child: Text("Go to the Screen #2"),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

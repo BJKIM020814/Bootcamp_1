@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:team_project_1/view/first_1_page.dart';
 import 'package:team_project_1/view/first_page.dart';
+import 'package:team_project_1/view/second_1_page.dart';
 import 'package:team_project_1/view/second_page.dart';
 
 import 'view/home.dart';
@@ -24,7 +26,9 @@ class MyApp extends StatelessWidget {
         '/1st':(context) {
           return FirstPage();
         },
-        '/2nd':(context) => SecondPage()
+        '/2nd': (context) => SecondPage(),
+        '/1-1st': (context) => First1Page(),
+        '/2-1nd': (context) => Second1Page(),
       },
       initialRoute: '/',
     );
