@@ -13,6 +13,7 @@ class Third1Page extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundImage: AssetImage(
