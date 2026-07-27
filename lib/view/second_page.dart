@@ -5,6 +5,25 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Screen 2nd"), centerTitle: true),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("Go to the Screen #1"),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/2-1nd"),
+              child: Text("Go to the Image page"),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
